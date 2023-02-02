@@ -1,10 +1,10 @@
 # node-js-hw-01
 
 # Отримуємо і виводимо весь список контактів у вигляді таблиці (console.table)
-img src='https://ibb.co/Kyxx9ph'
+https://ibb.co/Kyxx9ph
 
 # Отримуємо контакт по id
-node index.js --action="get" --id=5
+<a href="https://ibb.co/pRLZdys"><img src="https://i.ibb.co/pRLZdys/get.jpg" alt="get" border="0"></a>
 
 # Додаємо контакт
 node index.js --action="add" --name="Mango" --email="mango@gmail.com" --phone="322-22-22"
