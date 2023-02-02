@@ -1,7 +1,7 @@
 # node-js-hw-01
 
 # Отримуємо і виводимо весь список контактів у вигляді таблиці (console.table)
-img src='C:\Users\svoro\Documents\GitHub\node-js-hw-01\db\list.jpg';
+img src='https://ibb.co/Kyxx9ph'
 
 # Отримуємо контакт по id
 node index.js --action="get" --id=5
