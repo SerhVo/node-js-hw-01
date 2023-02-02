@@ -4,7 +4,7 @@
 https://ibb.co/Kyxx9ph
 
 # Отримуємо контакт по id
-<a href="https://ibb.co/pRLZdys"><img src="https://i.ibb.co/pRLZdys/get.jpg" alt="get" border="0"></a>
+[url=https://ibb.co/pRLZdys][img]https://i.ibb.co/pRLZdys/get.jpg[/img][/url]
 
 # Додаємо контакт
 node index.js --action="add" --name="Mango" --email="mango@gmail.com" --phone="322-22-22"
