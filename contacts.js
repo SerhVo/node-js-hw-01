@@ -1,13 +1,14 @@
-const fs = require("fs/promises");
+const fs = require("fs").promises;
 const path = require("path");
-
+const textFormat = "utf8";
 const contactsPath = path.join(__dirname, "db/contacts.json");
 
 async function listContacts() {
-    try {
-        const result = await fs.readFile(contactsPath);
-        console.log(result.toString());
-    } catch (e) {
+   try {
+    const response = await fs.readFile(contactsPath, textFormat);
+    const data = JSON.parse(response);
+    console.table(data);
+  } catch (e) {
         console.log(e.message);
     }
 }
@@ -22,7 +23,7 @@ async function getContactById(contactId) {
             (elem) => elem.id === contactId
         );
 
-        console.log(contactById);
+        console.table(contactById);
     } catch (e) {
         console.log(e.message);
     }
@@ -60,7 +61,7 @@ async function addContact(name, email, phone) {
 
         contactsArray.push(data);
 
-        console.log(data);
+        console.table(data);
 
         await fs.writeFile(contactsPath, JSON.stringify(contactsArray, null, 2));
     } catch (e) {
